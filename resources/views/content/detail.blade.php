@@ -20,7 +20,7 @@
 	<div id="wrapper">
 		<div class="wrapper-holder">
 			<header id="header">
-				<span class="logo"><a href="index.html">L'information sur l'Intelligence Artificielle</a></span>
+				<span class="logo"><a href="/">L'information sur l'Intelligence Artificielle</a></span>
 				<ul class="tools-nav tools-nav-mobile">
 					<li class="items"><a href="cart.html"><span>2</span> Items, <strong>$599.00</strong></a></li>
 					<li class="login"><a href="#">Login</a> / <a href="#">register</a></li>
@@ -30,7 +30,7 @@
 					<nav id="nav">
 						<ul>
 							@foreach($categories as $categorie)
-							<li><a href="{{asset('/categorie-')}}{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
+							<li><a href="/categorie-{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
 							@endforeach
 						</ul>
 					</nav>
@@ -39,8 +39,8 @@
 			<section class="bar">
 				<div class="bar-frame">
 					<ul class="breadcrumbs">
-						<li><a href="{{asset('/')}}">Home</a></li>
-						<li><a href="{{asset('/categorie-')}}{{ $articles[0]->idcategorie }}">{{ $articles[0]->libelle }}</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/categorie-{{ $articles[0]->idcategorie }}">{{ $articles[0]->libelle }}</a></li>
 					</ul>
 				</div>
 			</section>
