@@ -44,7 +44,7 @@
 					<nav id="nav">
 						<ul>
 							@foreach($categories as $categorie)
-							<li><a href="{{asset('/categorie-')}}{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
+							<li><a href="/categorie-{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
 							@endforeach
 						</ul>
 					</nav>
@@ -56,7 +56,7 @@
 					<div>
 									<div class="box-info-holder" style="width: 370px; padding: 0;">
 									<span class="title"><span>{{$time[$i]}}</span></span>
-									<h2>{{$articles[$i]->titre}}</h2>
+									<h2><a href="/detail/article-{{$articles[$i]->id}}">{{$articles[$i]->titre}}</a></h2>
 									<p>{{$articles[$i]->description}}</p>				
 								</div>
 								

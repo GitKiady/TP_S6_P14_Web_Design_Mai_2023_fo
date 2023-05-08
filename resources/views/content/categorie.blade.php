@@ -37,7 +37,7 @@
 					<nav id="nav">
 						<ul>
 							@foreach($categories as $categorie)
-							<li><a href="{{asset('/categorie-')}}{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
+							<li><a href="/categorie-{{ $categorie->id }}">{{$categorie->libelle}}</a></li>
 							@endforeach
 						</ul>
 					</nav>
@@ -46,8 +46,8 @@
 			<section class="bar">
 				<div class="bar-frame">
 					<ul class="breadcrumbs">
-						<li><a href="{{asset('/')}}">Home</a></li>
-						<li><a href="{{asset('/categorie-')}}{{ $cat[0]->id }}">{{ $cat[0]->libelle }}</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/categorie-{{ $cat[0]->id }}">{{ $cat[0]->libelle }}</a></li>
 					</ul>
 				</div>
 			</section>
@@ -65,7 +65,7 @@
 					<?php for($i = 0 ; $i<count($articles) ; $i++) { ?>
 					<li>
 						<div class="item">
-							<span class="name"><a href="{{asset('/detail/article-')}}{{$articles[$i]->id}}">{{$articles[$i]->titre}}</a>  </span>
+							<span class="name"><a href="/detail/article-{{$articles[$i]->id}}">{{$articles[$i]->titre}}</a>  </span>
 							<p style="font-size: 10px;">{{$time[$i]}}</p>
 							<p>{{$articles[$i]->description}}</p>
 								
