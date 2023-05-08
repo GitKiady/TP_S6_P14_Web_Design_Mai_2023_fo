@@ -10,6 +10,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Elegantic</title>
+		<style type="text/css">
+		.wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr; 
+			grid-template-rows: 300 100px;
+			grid-gap: 10px;
+		}
+	</style>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,16 +65,6 @@
 					<?php for($i = 0 ; $i<count($articles) ; $i++) { ?>
 					<li>
 						<div class="item">
-							<div class="image">
-								<img src="images/img-item-08.jpg"  alt="" />
-								<div class="hover">
-									<div class="item-content">
-										<a href="cart.html" class="btn white normal">Add to cart</a>
-										<a href="singleproduct.html" class="btn white normal">See details</a>
-									</div>
-									<span class="bg"></span>
-								</div>
-							</div>
 							<span class="name"><a href="{{asset('/detail/article-')}}{{$articles[$i]->id}}">{{$articles[$i]->titre}}</a>  </span>
 							<p style="font-size: 10px;">{{$time[$i]}}</p>
 							<p>{{$articles[$i]->description}}</p>
@@ -86,53 +84,6 @@
 				</div>
 			</section>
 		</div>
-		<footer id="footer">
-			<div class="footer-holder">
-				<div class="footer-frame">
-					<div class="footer-content">
-						<div class="col-holder">
-							<div class="col">
-								<div class="heading">
-									<h3>About us</h3>
-								</div>
-								<p>Vero eos et accusamus et iusto dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti</p>
-								<p>Quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
-							</div>
-							<div class="col">
-								<div class="heading">
-									<h3>Contact</h3>
-								</div>
-								<address>
-									<p><strong>Elegantic Inc.</strong></p>
-									<p>1041 Madison Ave,</p>
-									<p>New York</p>
-								</address>
-								<address>
-									<p>(45) 523 565 242</p>
-									<p><a href="mailto:office@elegantic.com">office@elegantic.com</a></p>
-								</address>
-							</div>
-							<div class="col col-contact">
-								<div class="heading">
-									<h3>Follow us</h3>
-								</div>
-								<ul class="social">
-									<li class="facebook"><a href="#">Facebook</a></li>
-									<li class="google"><a href="#">Google+</a></li>
-									<li class="twitter"><a href="#">Twitter</a></li>
-									<li class="pinterest"><a href="#">Pinterest</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer-bottom">
-						<div class="holder">
-							<p>Copyright 2014 Elegantic. All rights reserved.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>	
 	</div>
 	
 
