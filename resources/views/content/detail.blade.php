@@ -9,7 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>Elegantic</title>
+    <meta name="description" content="{{ $articles[0]->description }}" >
+    <meta name="keyword" content="{{ $articles[0]->keyword }}" >
+	<title>L'information sur l'Intelligence Artificielle</title>
 
 
 	<!--[if lt IE 9]>
