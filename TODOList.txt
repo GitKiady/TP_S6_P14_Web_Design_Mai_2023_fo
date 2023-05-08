@@ -1,0 +1,13 @@
+Vous allez crée une site d'information sur l'intelligence artificielle.
+Dans ce site, vous allez mettre en avant les derniers nouvelles, mettre des categorie de nouvelles tels que la santé, la finance, la tech, l'education,... 
+Comme dans tous les site d'information, vous pouvez faire des recherches
+
+Back-office:
+	1-Page de login admin
+	2-Page de liste des nouvelles trié par date de publication
+	3-Page de creation, de modification, de supression de contenue
+
+Front-office
+	1-Page d'acceuil avec les 5 nouvelles les plus reçente
+	2-Page par categorie
+	3-Recherche avancé
